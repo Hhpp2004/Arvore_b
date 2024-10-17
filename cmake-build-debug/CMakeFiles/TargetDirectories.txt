@@ -1,0 +1,3 @@
+/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug/CMakeFiles/main.dir
+/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug/CMakeFiles/rebuild_cache.dir

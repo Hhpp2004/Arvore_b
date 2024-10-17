@@ -1,0 +1,5 @@
+# ninja log v5
+0	62	1728301425780951700	CMakeFiles/main.dir/main.c.o	80cbb9fb7f31a792
+1	78	1728301425797951700	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	55988ca502fc579e
+78	141	1728301425861951700	main	e91709ff14eae75e
+0	3	0	clean	a31eedcededa8236
