@@ -1,5 +1,6 @@
 #ifndef LISTA_H
 #define LISTA_H
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 /*
@@ -34,6 +35,6 @@ void mostra(lista *l);
 lista *libera_lista(lista *l);
 no *retira_inicio(lista *l);
 no *retira_fim(lista *l);
-lista *divide(lista *l,int num);    
+lista *divide_lista(lista *l,int num);    
 
 #endif

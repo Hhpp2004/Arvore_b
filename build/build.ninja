@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Arvore_b
+# Project: Arvore_B
 # Configurations: Debug
 # =============================================================================
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build/
+cmake_ninja_workdir = /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build/
 # =============================================================================
 # Object build statements for EXECUTABLE target main
 
@@ -49,17 +49,23 @@ cmake_ninja_workdir = /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/
 
 build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
-build CMakeFiles/main.dir/main.c.o: C_COMPILER__main_Debug /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/main.c || cmake_object_order_depends_target_main
+build CMakeFiles/main.dir/main.c.o: C_COMPILER__main_Debug /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/main.c || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/main.c.o.d
   FLAGS = -g -Wall -Wextra -g
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
-build CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o: C_COMPILER__main_Debug /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/biblioteca/lista/lista_dupla.c || cmake_object_order_depends_target_main
+build CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o: C_COMPILER__main_Debug /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/biblioteca/lista/lista_dupla.c || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o.d
   FLAGS = -g -Wall -Wextra -g
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/biblioteca/lista
+
+build CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o: C_COMPILER__main_Debug /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/biblioteca/arvore_b/arvore.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o.d
+  FLAGS = -g -Wall -Wextra -g
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/biblioteca/arvore_b
 
 
 # =============================================================================
@@ -69,8 +75,9 @@ build CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o: C_COMPILER__main_Deb
 #############################################
 # Link the executable main
 
-build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o
+build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -82,7 +89,7 @@ build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.o CMakeFi
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -93,7 +100,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build && /usr/bin/cmake --regenerate-during-build -S/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b -B/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build
+  COMMAND = cd /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build && /usr/bin/cmake --regenerate-during-build -S/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b -B/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -109,7 +116,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build
+# Folder: /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build
 
 build all: phony main
 

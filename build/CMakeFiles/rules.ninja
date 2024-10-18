@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Arvore_b
+# Project: Arvore_B
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b -B/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build
+  command = /usr/bin/cmake --regenerate-during-build -S/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b -B/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build
   description = Re-running CMake...
   generator = 1
 

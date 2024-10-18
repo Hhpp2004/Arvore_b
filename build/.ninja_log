@@ -1,5 +1,20 @@
 # ninja log v5
-0	62	1728301425780951700	CMakeFiles/main.dir/main.c.o	80cbb9fb7f31a792
-1	78	1728301425797951700	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	55988ca502fc579e
-78	141	1728301425861951700	main	e91709ff14eae75e
+0	2	0	clean	a31eedcededa8236
+1	77	1729218940641361400	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	7249e7af63d4cea6
+1	72	1729218940635361700	CMakeFiles/main.dir/main.c.o	cfe512ca1095b414
+1	82	1729218940644361300	CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o	42329576419797e2
 0	3	0	clean	a31eedcededa8236
+1	92	1729219026534175600	CMakeFiles/main.dir/main.c.o	cfe512ca1095b414
+1	96	1729219026540175400	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	7249e7af63d4cea6
+2	103	1729219026545175200	CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o	42329576419797e2
+103	197	1729219026639172000	main	16e515689b7d319b
+0	4	0	clean	a31eedcededa8236
+1	58	1729219048480444600	CMakeFiles/main.dir/main.c.o	cfe512ca1095b414
+1	64	1729219048485444500	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	7249e7af63d4cea6
+1	74	1729219048494444200	CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o	42329576419797e2
+74	132	1729219048553442200	main	16e515689b7d319b
+0	3	0	clean	a31eedcededa8236
+1	68	1729219086675245700	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	7249e7af63d4cea6
+0	75	1729219086680245600	CMakeFiles/main.dir/main.c.o	cfe512ca1095b414
+1	84	1729219086691245200	CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o	42329576419797e2
+84	152	1729219086759243200	main	16e515689b7d319b

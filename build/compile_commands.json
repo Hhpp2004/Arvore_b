@@ -1,12 +1,17 @@
 [
 {
-  "directory": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build",
-  "command": "/usr/bin/clang -g -Wall -Wextra -g -o CMakeFiles/main.dir/main.c.o -c /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/main.c",
-  "file": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/main.c"
+  "directory": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build",
+  "command": "/usr/bin/clang -g -Wall -Wextra -g -o CMakeFiles/main.dir/main.c.o -c /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/main.c",
+  "file": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/main.c"
 },
 {
-  "directory": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build",
-  "command": "/usr/bin/clang -g -Wall -Wextra -g -o CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o -c /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/biblioteca/lista/lista_dupla.c",
-  "file": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/biblioteca/lista/lista_dupla.c"
+  "directory": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build",
+  "command": "/usr/bin/clang -g -Wall -Wextra -g -o CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o -c /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/biblioteca/lista/lista_dupla.c",
+  "file": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/biblioteca/lista/lista_dupla.c"
+},
+{
+  "directory": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build",
+  "command": "/usr/bin/clang -g -Wall -Wextra -g -o CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o -c /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/biblioteca/arvore_b/arvore.c",
+  "file": "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/biblioteca/arvore_b/arvore.c"
 }
 ]

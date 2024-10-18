@@ -138,7 +138,7 @@ que está dentro da lista e será passado para uma outra lista duplamente encade
 da arvore B, elá é criada e salva dentro da pagina, o processo de listagem funicona do mesmo jeito. Essa 
 função divide a lista e sobe o dado para a outra.
 */ 
-lista *divide(lista *l, int num)
+lista *divide_lista(lista *l, int num)
 {
     int cont = 1;
     no *aux = NULL;

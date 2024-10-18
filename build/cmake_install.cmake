@@ -1,4 +1,4 @@
-# Install script for directory: /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b
+# Install script for directory: /media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -51,9 +51,14 @@ arvore_b *cria_arvore(int ordem);
 pagina *cria_pagina();
 chave *cria_chave(int valor);
 int getvalor(no *aux);
-void insere_ordenado(lista *l,int valor);
-pagina *pesquisa_folha(pagina *pag_aux,int valor);
-void insere_pagina(pagina *folha,int valor);
+pagina *getfilho(no *aux);
+void insere_ordenado(lista *l,chave *valor);
+pagina *encontra_folha(pagina *raiz,int valor);
+void insere_pagina(pagina *folha,chave *valor);
+chave *ultima_chave(pagina *folha);
+pagina *divide_pagina(pagina *p);
+pagina *cria_raiz(pagina *folha,pagina *nova_pagina,chave *valor);
 void insere_arvore_b(arvore_b *raiz,int valor);
+void em_ordem(pagina *raiz);
 
 #endif

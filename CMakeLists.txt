@@ -5,6 +5,8 @@ project(Arvore_B)
 add_executable(main
     main.c        
         biblioteca/lista/lista_dupla.c
+        biblioteca/arvore_b/arvore.c
 )
 
+target_link_libraries(main m)
 target_compile_options(main PRIVATE -Wall -Wextra -g)
