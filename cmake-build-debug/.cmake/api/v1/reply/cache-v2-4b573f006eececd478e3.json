@@ -2,7 +2,7 @@
 	"entries" : 
 	[
 		{
-			"name" : "Arvore_b_BINARY_DIR",
+			"name" : "Arvore_B_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -11,10 +11,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug"
+			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/cmake-build-debug"
 		},
 		{
-			"name" : "Arvore_b_IS_TOP_LEVEL",
+			"name" : "Arvore_B_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -26,7 +26,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Arvore_b_SOURCE_DIR",
+			"name" : "Arvore_B_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b"
+			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug"
+			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -187,10 +187,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang++"
 		},
 		{
@@ -331,10 +331,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang"
 		},
 		{
@@ -611,7 +611,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b"
+			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/Arvore_b"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -911,7 +911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Arvore_b"
+			"value" : "Arvore_B"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1208,42 +1208,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
-		},
-		{
-			"name" : "Project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b/cmake-build-debug"
-		},
-		{
-			"name" : "Project_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/media/henrique/Arquivos/IFTM/Pesquisa_e_ordenacao/2024_2/arvore_b"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

@@ -60,5 +60,6 @@ pagina *divide_pagina(pagina *p);
 pagina *cria_raiz(pagina *folha,pagina *nova_pagina,chave *valor);
 void insere_arvore_b(arvore_b *raiz,int valor);
 void em_ordem(pagina *raiz);
+void mostrar_detalhes(lista *l);
 
 #endif

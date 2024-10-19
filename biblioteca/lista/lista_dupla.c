@@ -58,12 +58,8 @@ void insere_fim(void *valor, lista *l)
     }
     else
     {
-        while (aux->prox != NULL)
-        {
-            aux = aux->prox;
-        }
-        aux->prox = novo;
-        novo->ant = aux;
+        novo->ant = l->fim;
+        l->fim->prox = novo;
         l->fim = novo;
     }
 }
@@ -86,34 +82,44 @@ void mostra(lista *l)
 //TODO retirar dados da lista
 no *retira_inicio(lista *l)
 {
-    no *aux_3 = NULL;
-    no *aux = l->inicio;
-    if (aux != NULL)
+    no *aux = NULL;
+    if(l->fim != NULL && l->inicio != NULL)
     {
-        aux_3 = aux;
-        no *aux2 = aux->prox;
-        if (aux != NULL)
+        aux = l->inicio;
+        if(l->inicio == l->fim)
         {
-            l->inicio = aux2;
-            aux2->ant = NULL;
-            free(aux);
+            l->fim = NULL;
+            l->inicio = NULL;
+        }
+        else
+        {
+            l->inicio = l->inicio->prox;
+            l->inicio->ant = NULL;
         }
     }
-    return aux_3;
+    return aux;
 }
 
 no *retira_fim(lista *l)
 {
-    no *aux = l->fim;
-    no *aux_2 = l->fim->ant;
-
-    if (aux != NULL)
+    no *aux = NULL;
+    if(l->fim != NULL && l->inicio != NULL)
     {
-        aux_2->prox = NULL;
-        l->fim = aux_2;
-        free(aux);
+        aux = l->fim;
+        if(l->fim != l->inicio)
+        {
+            l->fim = l->fim->ant;
+            l->fim->prox = NULL;
+        }
+        else
+        {
+            l->inicio = NULL;
+            l->fim = NULL;
+        }        
+        aux->prox = NULL;
+        aux->ant = NULL;
     }
-    return aux_2;
+    return aux;
 }
 
 /*
@@ -140,20 +146,20 @@ função divide a lista e sobe o dado para a outra.
 */ 
 lista *divide_lista(lista *l, int num)
 {
-    int cont = 1;
-    no *aux = NULL;
+    int cont = 0;
+    no *aux = l->inicio;
     lista *lista_2 = cria_lista();
     if(l->fim != NULL && l->inicio != NULL)
     {
-        while (aux != NULL && cont <= num)
+        while (aux != NULL && cont < num)
         {
             cont++;
             aux = aux->prox;
         }
-        lista_2->inicio = aux->prox;      
+        lista_2->inicio = aux;      
         lista_2->fim = l->fim;
-        lista_2->inicio->ant = NULL;
         l->fim = aux->ant;
+        lista_2->inicio->ant = NULL;
         l->fim->prox = NULL;
     }
     return lista_2;

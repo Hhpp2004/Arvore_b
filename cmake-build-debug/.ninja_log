@@ -2,3 +2,7 @@
 2	44	1727800967972705500	CMakeFiles/main.dir/main.c.o	bf05ef1a3cadecef
 2	48	1727800967973346300	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	4b5abd3cea2899a1
 48	93	1727800968018824800	main	e91709ff14eae75e
+1	85	1729219486777903200	CMakeFiles/main.dir/main.c.o	961a02d8f1cb3db
+2	90	1729219486777903200	CMakeFiles/main.dir/biblioteca/lista/lista_dupla.c.o	4ae4732c2a393c74
+2	94	1729219486777903200	CMakeFiles/main.dir/biblioteca/arvore_b/arvore.c.o	198595987ffc707f
+94	146	1729219486869902000	main	16e515689b7d319b

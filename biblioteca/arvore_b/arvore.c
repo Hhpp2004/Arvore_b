@@ -11,9 +11,9 @@ acima da função de insere_arvore
 arvore_b *cria_arvore(int ordem)
 {
     arvore_b *arvore = malloc(sizeof(arvore_b));
-    arvore->altura = 0;
-    arvore->ordem = ordem;
     arvore->raiz = NULL;
+    arvore->ordem = ordem;
+    arvore->altura = 0;
     return arvore;
 }
 
@@ -23,21 +23,21 @@ os dados. Deverá criar a lista aqui na função de criação da pagina.
 */
 pagina *cria_pagina()
 {
-    pagina *valor = malloc(sizeof(pagina));
-    valor->dir = NULL;
-    valor->folha = 1;
-    valor->lista = cria_lista();
-    valor->pai = NULL;
-    valor->qtd_chaves = 0;
-    return valor;
+    pagina *p = malloc(sizeof(pagina));
+    p->folha = 1;
+    p->qtd_chaves = 0;
+    p->pai = NULL;
+    p->lista = cria_lista();
+    p->dir = NULL;
+    return p;
 }
 
 // TODO criação da chave.
 chave *cria_chave(int valor)
 {
     chave *chave = malloc(sizeof(valor));
+    chave->valor_chave = valor;
     chave->filho = NULL;
-    chave->valor_chave = 0;
     return chave;
 }
 
@@ -61,7 +61,7 @@ pagina *getfilho(no *aux)
 void insere_ordenado(lista *l, chave *valor)
 {
     no *aux = l->inicio;
-    no *novo_no;
+    no *novo_no = NULL;
 
     // TODO verificanco se tem dados na lista para a primeira inserção
     if (l->inicio == NULL)
@@ -78,28 +78,21 @@ void insere_ordenado(lista *l, chave *valor)
         {
             insere_inicio(valor, l);
         }
+        else if (valor->valor_chave > getvalor(l->fim))
+        {
+            insere_fim(valor, l);
+        }
         else
         {
-            if (valor->valor_chave < getvalor(aux))
+            while (valor->valor_chave > getvalor(aux))
             {
-                insere_inicio(valor, l);
+                aux = aux->prox;
             }
-            else if (valor->valor_chave > getvalor(aux))
-            {
-                insere_fim(valor, l);
-            }
-            else
-            {
-                while (valor->valor_chave > getvalor(aux))
-                {
-                    aux = aux->prox;
-                }
-                novo_no = cria_no(valor);
-                novo_no->prox = aux;
-                novo_no->ant = aux->ant;
-                aux->ant = novo_no;
-                novo_no->ant->prox = novo_no;
-            }
+            novo_no = cria_no(valor);
+            novo_no->ant = aux->ant;
+            novo_no->prox = aux;
+            aux->ant = novo_no;
+            novo_no->ant->prox = novo_no;
         }
     }
 }
@@ -172,7 +165,7 @@ da lista;
 pagina *divide_pagina(pagina *p)
 {
     pagina *nova_pagina = cria_pagina();
-    int qtd_pagina = ceil(p->qtd_chaves / 2);
+    int qtd_pagina = ceil(p->qtd_chaves / 2.0);
     lista *nova_lista = NULL;
     chave *ultima_chave = NULL;
 
@@ -181,6 +174,7 @@ pagina *divide_pagina(pagina *p)
     nova_pagina->qtd_chaves = p->qtd_chaves - qtd_pagina;
     nova_pagina->pai = p->pai;
     nova_pagina->folha = p->folha;
+    nova_pagina->dir = p->dir;
     p->qtd_chaves = qtd_pagina;
 
     ultima_chave = p->lista->fim->info;
@@ -199,7 +193,7 @@ pagina *divide_pagina(pagina *p)
         */
         if (aux != NULL)
         {
-            ((chave *)aux->prox)->filho = nova_pagina;
+            ((chave *)aux->info)->filho = nova_pagina;
         }
         else
         {
@@ -220,6 +214,7 @@ pagina *divide_pagina(pagina *p)
         nova_pagina->dir->pai = nova_pagina;
         p->dir = ultima_chave->filho;
     }
+    ultima_chave->filho = p;
     return nova_pagina;
 }
 
@@ -228,13 +223,12 @@ pagina *divide_pagina(pagina *p)
 pagina *cria_raiz(pagina *folha, pagina *nova_pagina, chave *valor)
 {
     pagina *nova_raiz = cria_pagina();
-    nova_raiz->dir = nova_pagina;
-    insere_inicio(valor, nova_raiz->lista);
-    valor->filho = folha;
     nova_raiz->folha = 0;
-    nova_raiz->qtd_chaves++;
-    folha->pai = nova_raiz;
+    insere_pagina(nova_pagina,valor);
+    valor->filho = folha;
+    nova_raiz->dir = nova_pagina;
     nova_pagina->pai = nova_raiz;
+    valor->filho->pai = nova_raiz;
     return nova_raiz;
 }
 
@@ -270,6 +264,7 @@ void insere_arvore_b(arvore_b *a, int valor)
             {
                 valor_insere = 0;
             }
+            //TODO estourou a pagina, será necessario a divisão de dados
             else
             {
                 nova_pagina = divide_pagina(folha);
@@ -298,9 +293,22 @@ void em_ordem(pagina *raiz)
         while (aux != NULL)
         {
             em_ordem(((chave *)aux->info)->filho);
-            printf("%d ", ((chave *)aux->info)->valor_chave);
+            printf("%i ", ((chave *)aux->info)->valor_chave);
             aux = aux->prox;
         }
         em_ordem(raiz->dir);
+    }
+}
+
+void mostrar_detalhes (lista *l)
+{
+    no *aux = l->inicio;
+    while(aux != NULL)
+    {
+        printf("%i [%i] %i",
+        aux->ant == NULL?0:getvalor(aux->ant),
+        getvalor(aux),
+        aux->prox == NULL?0:getvalor(aux->prox));
+        aux = aux->prox;
     }
 }
